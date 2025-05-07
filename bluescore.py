@@ -174,9 +174,9 @@ def calculate_codebleu(code_reference, code_generated) -> float:
 check_javalang_installation()
 
 # Load the JSON files
-with open("/raid/ganesh/nagakalyani/nagakalyani/siamese/Saurav_Experiments/BugFix/FineTuneResults/results.json", "r") as f:
+with open("./BugFix/QWQ/Results/results.json", "r") as f:
     result = json.load(f)
-with open("/raid/ganesh/nagakalyani/nagakalyani/siamese/Saurav_Experiments/BugFix/test/fixed.json", "r") as f:
+with open("./BugFix/test/fixed.json", "r") as f:
     fixed = json.load(f)
 
 total_bleu = 0

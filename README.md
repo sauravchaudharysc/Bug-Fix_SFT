@@ -71,13 +71,16 @@ python3 inference_CR.py \
 
 ## 📈 Goal
 
-Evaluate the fine-tuned model on unseen buggy code samples to determine if the generated output fixes the bug — **test cases serve as the final correctness measure**.
+Evaluate the fine-tuned model on unseen buggy code samples to determine if the generated output fixes the bug.
 
 ## 📈 Task Summary & Results 
 ### 🧠 Model 
 - **Model Name:** `Qwen/QwQ-32B` 
   
 ### 🧪 Code Repair Task Summary – CodeXGLUE Dataset 
+```python
+python3 bluescore.py
+```
 **Before Supervised Fine-Tuning:** 
 - BLEU Score: `0.5258` 
 - CodeBLEU Score: `0.4630` 
